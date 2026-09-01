@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/* Imports the necessary fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@500;700&display=swap');
+
+/* ----------------------------------------------------------------------
+ * 1. BASE LAYOUT & MENU (Adapted from Coach Dashboard style)
+ * ---------------------------------------------------------------------- */
+body {
+    /* Assuming background and font families are set in your main style.css */
+    /* If you are only using this file, include the necessary body styles here: */
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: url("../images/Weekly A to Z, October 30th_.gif") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    */
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Left menu */
+.side-menu {
+    width: 250px;
+    min-height: 100vh;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.side-menu h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00bcd4; /* Highlight Menu Title */
+    font-family: "Montserrat", sans-serif;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu li {
+    margin: 20px 0;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 10px;
+    display: block;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.side-menu a:hover {
+    background: rgba(0, 188, 212, 0.2); /* Light teal hover background */
+    color: #00bcd4;
+}
+
+/* Main Dashboard Area */
+.main-content {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main-content h1 {
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.main-content h3 {
+    text-align: left;
+    color: #ccc;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+/* ----------------------------------------------------------------------
+ * 2. MEAL GRID LAYOUT (The core display for the subscriber)
+ * ---------------------------------------------------------------------- */
+
+.meal-grid {
+    display: grid;
+    /* Create a responsive grid with a minimum card width of 280px */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    width: 100%;
+}
+
+.meal-box {
+    background: rgba(255, 255, 255, 0.15); /* Slightly clearer background */
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, background 0.3s;
+    min-height: 200px;
+}
+
+.meal-box:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.meal-header h2 {
+    font-size: 1.5em;
+    color: #00bcd4; /* Highlight the meal type */
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+}
+
+.meal-body {
+    flex-grow: 1;
+}
+
+.meal-body p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.meal-description {
+    font-weight: 400;
+    color: #eee;
+    font-style: italic;
+}
+
+.no-meals-message {
+    color: #ff9800;
+    font-size: 1.2em;
+    padding: 50px;
+    text-align: center;
+    grid-column: 1 / -1; /* Span the whole grid */
+}
+
+

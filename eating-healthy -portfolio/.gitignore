@@ -1,0 +1,28 @@
+# Java / Maven
+target/
+*.class
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# IntelliJ
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Environment / secrets
+.env
+*.env
+
+# OS files
+.DS_Store
+Thumbs.db
+# Firebase credentials
+src/main/resources/firebase/

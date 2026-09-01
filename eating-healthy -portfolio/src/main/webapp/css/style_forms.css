@@ -1,0 +1,283 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@500;700&display=swap');
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:"Poppins",san-serif;
+	
+	}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* align at top instead of center */
+    min-height: 100vh;
+    background: url("../images/Weekly A to Z, October 30th_.gif") no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    padding-top: 60px; /* add some breathing space from the top */
+    overflow-y: auto; /* allow scrolling */
+}
+
+.wrapper{
+	
+	width:420px;
+	background:transparent;
+	border:2px solid rgba(255,255,255,.2);
+	backdrop-filter:blur(20px);
+	box-shadow: 0 0 10px rgba(0,0,0,.2);
+	color:#fff;
+	border-radius:10px;
+	padding:30px 40px;
+}
+.wrapper h1{
+	
+	font-size:36px;
+	text-align:center;
+}
+.wrapper .input-box{
+	width:100%;
+	height:50px;
+	margin:30px 0;
+	border-radius:40px;
+	
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2); /* also fixed a typo here */
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.wrapper .btn{
+	width:100%;
+	height:45px;
+	background:#fff;
+	border:none;
+	outline:none;
+	border-radius:40px;
+	box-shadow: 0 0 10px rgba(0,0,0, .1);
+	cursor:pointer;
+	font-size:16px;
+	color:#333;
+	font-weight:600;
+	
+	
+	
+	
+}
+.wrapper.register-link{
+	font-size:14.5px;
+	text-align:center;
+	margin:20px 0 15px;
+	padding:5px;
+	
+	
+}
+.register-link p a{
+	color:#fff;
+	text-decoration:none;
+	font-weight:600;
+	
+}
+register-link p a:hover{
+	text-decoration:underline;
+}
+
+/* ===== Register Page Styling ===== */
+.register-wrapper {
+    width: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.register-wrapper h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.register-form .input-box {
+    margin-bottom: 20px;
+}
+
+.register-form input,
+.register-form select {
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    outline: none;
+}
+
+.register-form select {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.register-form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.register-form .btn {
+    background: #fff;
+    color: #333;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.register-form .btn:hover {
+    background: #ddd;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14.5px;
+}
+
+.register-link a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+/* ... (Keep all your existing form styles here: .wrapper, .input-box, .btn) ... */
+
+/* ----------------------------------------------------------------------
+ * PROFILE SPECIFIC STYLES (for UpdateProfile.jsp)
+ * ---------------------------------------------------------------------- */
+
+/* Target the label and make it visible */
+.wrapper label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #00bcd4; /* Use primary color for labels */
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+/* Adjust the input box for better form flow */
+.wrapper .input-box {
+    height: auto; /* Allow height to adjust for labels/textareas */
+    margin: 20px 0; /* Reduced margin */
+    border-radius: 0; /* Remove border radius for the container itself */
+}
+
+/* Style for input fields (weight/height) */
+.input-box input {
+    height: 45px;
+    padding: 10px 20px; /* Adjust padding for better look with labels */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Style for the textarea (allergies) */
+.input-box textarea {
+    width: 100%;
+    /* Use the same transparent, frosted style as the input fields */
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px);
+    border-radius: 10px; /* Use slight rounding for textarea */
+    font-size: 16px;
+    color: #fff;
+    padding: 15px 20px;
+    resize: vertical; /* Allow vertical resizing, but not horizontal */
+    outline: none;
+    min-height: 100px;
+}
+
+/* Style for the back link */
+.wrapper p a {
+    color: #ccc;
+    text-decoration: none;
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+}
+
+.wrapper p a:hover {
+    color: #00bcd4;
+    text-decoration: underline;
+}
+
+/* Message styling */
+p.success, p.error {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+p.success {
+    background-color: rgba(76, 175, 80, 0.2); /* Green background */
+    border: 1px solid #4CAF50;
+}
+
+p.error {
+    background-color: rgba(244, 67, 54, 0.2); /* Red background */
+    border: 1px solid #F44336;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
