@@ -107,3 +107,31 @@ Sara Zaanine
 Master 2 — Computer Systems and Networks
 University of Blida 1 — Saad Dahleb
 2026
+## 📸 Screenshots
+
+### 01. Login Page
+![Login Page](screenshots/01-log-in.png)
+
+### 02. Coach Dashboard
+![Coach Dashboard](screenshots/02-coach-dashboard.png)
+
+### 03. Subscriber Dashboard
+![Subscriber Dashboard](screenshots/03-subscriber-dashboard.png)
+
+### 04. Notifications
+![Notifications](screenshots/04-notifications.png)
+
+### 05. BMI Calculator
+![BMI Calculator](screenshots/05-bmi.png)
+
+### 06. Add Meal Form
+![Add Meal Form](screenshots/06-add-meal-form.png)
+
+### 07. View Subscribers
+![View Subscribers](screenshots/07-view-subscribers.png)
+
+### 08. Workout API
+![Workout API](screenshots/08-workout-API.png)
+
+### 09. Workout API
+![Workout API](screenshots/09-workout-API.png)
